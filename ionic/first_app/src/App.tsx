@@ -2,6 +2,7 @@ import { Redirect, Route } from 'react-router-dom';
 import { IonApp, IonButtons, IonContent, IonHeader, IonMenu, IonMenuButton, IonPage, IonRouterOutlet, IonTitle, IonToolbar, setupIonicReact } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 
+
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
 
@@ -32,6 +33,7 @@ import ShowVehicule from './pages/ShowVehicule';
 import ListTrajet from './pages/ListTrajet';
 import ShowAvion from './pages/ListAvion';
 import ListE from './pages/lsEntretient';
+import ShowAssuranceExp from './pages/ShowAssuranceExp';
 setupIonicReact();
 
 const App: React.FC = () => (
@@ -41,6 +43,9 @@ const App: React.FC = () => (
         <Route path="/">
           <MenuHeader />
           <ShowAvion/>
+        </Route>
+        <Route path="/assuranceA">
+          <ShowAssuranceExp/>
         </Route>
         <Route path="/entretien/:id">
           <MenuHeader />
