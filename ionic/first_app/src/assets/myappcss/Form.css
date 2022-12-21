@@ -1,0 +1,16 @@
+.myform{
+    padding: 20px;
+    background-color: rgb(69, 69, 69);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 400px;
+}
+.inputitem{
+    margin: 5px;
+}
+.formtitle{
+    font-size: 25px;
+    color: white;
+}
